@@ -1,5 +1,5 @@
 terraform {
-    required_version = "~>1.18.0"
+    required_version = "~>1.8.0"
     backend "gcs" {
         bucket  = "tf-state-prod"
         prefix  = "terraform/state"
