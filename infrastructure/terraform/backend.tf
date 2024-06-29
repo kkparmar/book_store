@@ -1,8 +1,7 @@
 terraform {
     required_version = "~>1.8.0"
     backend "gcs" {
-        bucket  = "kkparmar_terraform_state"
-        prefix  = "book_store/dev"
+
     }
     required_providers {
         google = {
