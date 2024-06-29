@@ -1,7 +1,7 @@
 variable region {
     type = string
     description = "Region where resource is created"
-    default = "ap-southeast1"
+    default = "australia-southeast1"
 }
 
 variable project_id {
