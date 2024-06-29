@@ -4,7 +4,8 @@ locals {
         "firebaserules.googleapis.com",
         "storage-api.googleapis.com",
         "artifactregistry.googleapis.com",
-        "containerregistry.googleapis.com"
+        "containerregistry.googleapis.com",
+        "run.googleapis.com"
     ]
 
     bookstore_iam_roles = [
