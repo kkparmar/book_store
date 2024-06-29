@@ -1,8 +1,8 @@
 terraform {
     required_version = "~>1.8.0"
     backend "gcs" {
-        bucket  = "tf-state-prod"
-        prefix  = "terraform/state"
+        bucket  = var.state_bucket
+        prefix  = var.state_prefix
     }
     required_providers {
         google = {
