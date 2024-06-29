@@ -40,9 +40,9 @@ resource "google_service_account" "bookstore_app" {
 
 
 
-resource "google_service_account_iam_member" "bookstore_app_sa_iam" {
+resource "google_project_iam_member" "bookstore_app_sa_iam" {
   for_each = toset(local.bookstore_iam_roles)
-  service_account_id = data.google_compute_default_service_account.default.name
+  project = var.project_id
   role               = each.value
-  member             = "serviceAccount:${google_service_account.sa.email}"
+  member             = "serviceAccount:${google_service_account.bookstore_app.email}"
 }
