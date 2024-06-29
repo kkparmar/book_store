@@ -14,12 +14,3 @@ variable tf_service_account {
     description = "Terraform service account"
 }
 
-variable state_bucket {
-    type = string
-    description = "Bucket where terraform state file is stored"
-}
-
-variable state_prefix {
-    type = string
-    description = "Bucket prefix for statefile"
-}
