@@ -12,7 +12,7 @@ output "random_string" {
 
 ### enable apis
 
-resource "google_project_service" "sevices" {
+resource "google_project_service" "services" {
   for_each = toset(local.enabled_apis)
   project = var.project_id
   service = each.value
@@ -28,5 +28,5 @@ resource "google_firestore_database" "database" {
   concurrency_mode            = "OPTIMISTIC"
   app_engine_integration_mode = "DISABLED"
 
-  depends_on = [google_project_service.sevices["firestore.googleapis.com"]]
+  depends_on = [google_project_service.services["firestore.googleapis.com"]]
 }
