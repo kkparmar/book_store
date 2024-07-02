@@ -194,3 +194,9 @@ To run and test the application locally, perform the following steps:
 
     ================================================== 6 passed in 3.18s ==================================================
     ```
+
+
+    TODO:
+    GCP filestore does not support partial text search and needs integrated with 3rd party tool like Elastic so its probably not the best database for this requirement
+
+    For next version, need to move the database to cloudsql relational DB which has better support for search and filter requirements
