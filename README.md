@@ -22,14 +22,14 @@ This application is intended to run in GCP cloud run environment with firestore 
 
 ### Print welcome message
 
-Endpoint: /
+Endpoint: `/`
 
 Method: GET
 
 Response: Welcome message
 
 ### Add a book
-Endpoint: /add-book
+Endpoint: `/add-book`
 
 Method: POST
 
@@ -37,15 +37,15 @@ Request Body:  JSON payload of book to be added
 Sample request:
 ```
 {
-            "isbn": "9781593279509",
-            "title": "Eloquent JavaScript, Third Edition",
-            "authors": "Marijn Haverbeke",
-            "publisher": "No Starch Press",
-            "categories": [
-                "Non-Fiction",
-                "Technology"
-            ],
-            "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications."
+    "isbn": "9781593279509",
+    "title": "Eloquent JavaScript, Third Edition",
+    "authors": "Marijn Haverbeke",
+    "publisher": "No Starch Press",
+    "categories": [
+        "Non-Fiction",
+        "Technology"
+    ],
+    "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications."
 }
 ```
 Response: UUID of the book added 
