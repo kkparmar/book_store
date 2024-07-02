@@ -1,0 +1,70 @@
+{
+    "model": {
+        "isbn": "number",
+        "title": "string",
+        "description": "string",
+        "categories": [
+            "string1",
+            "string2",
+            "string3"
+        ],
+        "authors": [
+            "string1",
+            "string2",
+            "string3"
+        ],
+        "publisher": "string"
+    },
+    "books": [
+        {
+            "isbn": "9781593279509",
+            "title": "Eloquent JavaScript, Third Edition",
+            "authors": "Marijn Haverbeke",
+            "publisher": "No Starch Press",
+            "categories": [
+                "Non-Fiction",
+                "Technology"
+            ],
+            "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications."
+        },
+        {
+            "isbn": "9781491943533",
+            "title": "Practical Modern JavaScript",
+            "authors": "Nicolás Bevacqua",
+            "publisher": "O'Reilly Media",
+            "categories": [
+                "Non-Fiction",
+                "Technology"
+            ],
+            "description": "To get the most out of modern JavaScript, you need learn the latest features of its parent specification, ECMAScript 6 (ES6). This book provides a highly practical look at ES6, without getting lost in the specification or its implementation details."
+        },
+        {
+            "isbn": "9781484200766",
+            "title": "Pro Git",
+            "authors": [
+                "Scott Chacon",
+                "Ben Straub"
+            ],
+            "publisher": "Apress; 2nd edition",
+            "categories": [
+                "Non-Fiction",
+                "Technology"
+            ],
+            "description": "Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro."
+        },
+        {
+            "isbn": "0439785960",
+            "title": "Harry Potter and the Half-Blood Prince",
+            "authors": [
+                "J.K. Rowling"
+            ],
+            "description": "HThe war against Voldemort is not going well; even Muggle governments are noticing. Ron scans the obituary pages of the Daily Prophet, looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses.And yet . . .As in all wars, life goes on. The Weasley twins expand their business. Sixth-year students learn to Apparate - and lose a few eyebrows in the process. Teenagers flirt and fight and fall in love. Classes are never straightforward, through Harry receives some extraordinary help from the mysterious Half-Blood Prince.So it's the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Here at Hogwarts, Harry will search for the full and complete story of the boy who became Lord Voldemort - and thereby find what may be his only vulnerability.",
+            "categories": [
+                "Fantasy",
+                "Young Adult",
+                "Fiction"
+            ],
+            "publisher": "Scholastic Inc."
+        }
+    ]
+}
