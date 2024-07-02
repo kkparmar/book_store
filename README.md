@@ -54,38 +54,39 @@ Sample Response: `{'book_id': '6bad884f-367d-11ef-8cdd-2c3358935ef3'}`
 
 ### Get all books
 
-Endpoint: /get-books
+Endpoint: `/get-books`
 
 Method: GET
 
 Response: list of all the books
 
 Sample Response:
-```[{
-            "isbn": "9781593279509",
-            "title": "Eloquent JavaScript, Third Edition",
-            "authors": "Marijn Haverbeke",
-            "publisher": "No Starch Press",
-            "categories": [
-                "Non-Fiction",
-                "Technology"
-            ],
-            "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications."
+```
+[{
+    "isbn": "9781593279509",
+    "title": "Eloquent JavaScript, Third Edition",
+    "authors": "Marijn Haverbeke",
+    "publisher": "No Starch Press",
+    "categories": [
+        "Non-Fiction",
+        "Technology"
+    ],
+    "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications."
 }]
 ```
 
 ### Update a book
 
-Endpoint: /update-book/<uuid>
+Endpoint: `/update-book/<uuid>`
 
-Method: PUt
+Method: PUT
 
 Request Body:  JSON payload of book attributes to be updated
 Sample request:
 ```
 {
-            "authors": "Marijn Haverbeke",
-            "publisher": "No Starch Press",
+    "authors": "Marijn Haverbeke",
+    "publisher": "No Starch Press",
 }
 ```
 Response: Book details
@@ -93,21 +94,21 @@ Response: Book details
 Sample Response:
 ```
 {
-            "isbn": "9781593279509",
-            "title": "Eloquent JavaScript, Third Edition",
-            "authors": "Marijn Haverbeke",
-            "publisher": "No Starch Press",
-            "categories": [
-                "Non-Fiction",
-                "Technology"
-            ],
-            "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications."
+    "isbn": "9781593279509",
+    "title": "Eloquent JavaScript, Third Edition",
+    "authors": "Marijn Haverbeke",
+    "publisher": "No Starch Press",
+    "categories": [
+        "Non-Fiction",
+        "Technology"
+    ],
+    "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications."
 }
 ```
 
 ### Delete a book
 
-Endpoint: /delete-book/<uuid>
+Endpoint: `/delete-book/<uuid>`
 
 Method: DELETE
 
@@ -131,7 +132,7 @@ However, following resources were created via clickOps to enable terraform and p
 
 ### Database
 
-The application uses `(default)` database. The application uses `bookstore` collection and python automated tests uses `bookstore_test` collection and these are defined in `prodenv` and `testenv` configuration files
+The application uses `(default)` [database](https://firebase.google.com/docs/firestore/manage-databases). The application uses `bookstore` collection and python automated tests uses `bookstore_test` collection and these are defined in `prodenv` and `testenv` configuration files
 
 ## How to run application locally
 
